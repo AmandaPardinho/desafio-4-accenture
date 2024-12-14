@@ -14,7 +14,7 @@ public class AlunoDto {
     private String cpf;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDateTime dataNascimento;
+    private String dataNascimento;
 
     private String telefone;
     private String cep;
@@ -71,11 +71,11 @@ public class AlunoDto {
         this.cpf = cpf;
     }
 
-    public LocalDateTime getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDateTime dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
